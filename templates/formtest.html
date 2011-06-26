@@ -1,0 +1,31 @@
+$def with (form)
+<!DOCTYPE html><html lang=en>
+<head>
+<title>My Maps</title>
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-s
+cale=1.0; user-scalable=0;">
+<link rel="apple-touch-icon" href="static/iui/iui-logo-touch-icon.png">
+<meta name="apple-touch-fullscreen" content="YES">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<style type="text/css" media="screen">@import "static/iui/iui.css";</style>
+<script type="application/x-javascript" src="static/iui/iui.js"></script>
+<!--
+<script type="application/x-javascript" src="http://10.0.1.2:1840/ibug.js"></sc
+ript>
+-->
+</head>
+<body>
+    <div class="toolbar">
+        <h1 id="pageTitle"></h1>
+        <a id="backButton" class="button" href="#"></a>
+    </div>
+    <ul id="home" title="My Maps" selected="true">
+        <center>
+        <form name="main" method="post"> 
+        $:form.render()
+        <input type="submit" value="Log in" style="margin-left: 5px; height: 37px; width: 500px"></input>
+        </form>
+        </center>
+    </ul>
+</body>
+</html>
