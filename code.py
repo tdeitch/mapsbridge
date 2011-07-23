@@ -16,6 +16,9 @@ from web import form    # the form rendering and processing code
 import re               # regular expression processing
 import mechanize        # web scraping
 
+# disable debug mode, just to be safe
+web.config.debug = False
+
 # the location of the templates directory, relative to code.py (this file)
 render = web.template.render('templates/')
 
@@ -35,13 +38,13 @@ class index:
         # create a copy of 'myform' by calling it (as in the line above)
         # otherwise changes to the form will appear globally, since 'myform' was created outside this class
         # pass an instance 'f' of the form 'myform' to be rendered in login.html
-        return render.formtest(f)
+        return render.login(f)
     def POST(self): 
         # create another instance of 'myform'. It's safe to override the previous one now (from the GET request).
         f = myform()
         # if the form doesn't validate, give the user another chance
         if not f.validates():
-            return render.formtest(f)
+            return render.login(f)
         else:
             # save the username and password to shorter variables for easier typing, because I am lazy
             user = f.d.username
