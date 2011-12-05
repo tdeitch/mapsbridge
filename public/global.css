@@ -1,0 +1,35 @@
+@import url(http://fonts.googleapis.com/css?family=Yellowtail&v2);
+
+body {
+    color: #000000;
+    background-color: #FFFFFF;
+    margin: 20px;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, sans serif;
+    min-width: 760px;
+}
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+header>h1 {
+    font-family: 'Yellowtail', cursive;
+    font-size: 3em;
+}
+header>h1>a {
+    text-decoration: none;
+    color: #000000;
+}
+form {
+    text-align: center;
+    margin-bottom: 30px;
+}
+#content {
+    width: 740px;
+    margin: 0 auto 0 auto;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+    font-size: 2em;
+}
