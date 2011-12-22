@@ -1,5 +1,2 @@
-require 'rubygems'
-require 'sinatra'
-require 'mechanize'
-require 'maps.rb'
+require './maps'
 run Sinatra::Application
