@@ -2,7 +2,7 @@ require 'rubygems'
 require 'mechanize'
 require 'sinatra'
 
-configure do
+configure :production do
   set :default_encoding, 'utf-8'
 end
 
