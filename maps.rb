@@ -2,6 +2,10 @@ require 'rubygems'
 require 'mechanize'
 require 'sinatra'
 
+configure do
+  set :default_encoding, 'utf-8'
+end
+
 def get_links(username, password)
   # Create a browser session using mechanize called agent
   agent = Mechanize.new
