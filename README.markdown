@@ -1,3 +1,7 @@
+**Note:** Mapsbridge does not support Apple Maps or two-factor auth, and is drifting out of date. If you'd like to maintain this project, let me know or send me a pull request. Otherwise, I suggest using [My Maps Editor](https://itunes.apple.com/us/app/my-maps-editor/id389114621), which offers the same functionality as Mapsbridge did.
+
+---
+
 Mapsbridge
 ==========
 
